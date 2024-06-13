@@ -20,6 +20,6 @@ jobs:
       - name: Login to docker hub
         run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
       - name: Build docker image
-        run: docker build -t testalokaws/springboot-example .
+        run: docker build -t shantubande/springboot-example .
       - name: Publish image to docker hub
-        run: docker push testalokaws/springboot-example:latest
+        run: docker push shantubande/springboot-example:latest
